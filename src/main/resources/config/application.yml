@@ -103,11 +103,12 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/auth/realms/jhipster
+            issuer-uri: https://localhost:9443/oauth2/token
         registration:
           oidc:
-            client-id: web_app
-            client-secret: web_app
+            client-id: XHR1naeX_TWVQTVQVZ5Mm3IdfqMa
+            client-secret: zUo2lmi3aMaemTPTmr8i7vCf77Ma
+            redirect-uri: http://localhost:8080/login/oauth2/code/oidc
 
 server:
   servlet:
